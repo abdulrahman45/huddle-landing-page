@@ -1,5 +1,5 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
-*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
 :root{
     --pink: hsl(322, 100%, 66%);
     --very-pale-cyan: hsl(193, 100%, 96%);
@@ -81,13 +81,85 @@ body{
 .cards{
     display: flex;
     flex-direction: column;
-    padding: 10em;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: auto;
     background-color: #fff;
+    padding: 10em 5em;
 }
 .img-card{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 4px 1px rgba(128, 128, 128, 0.351);
+    padding: 1em;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.card-par{
+    padding: 7em;
+    font-size: 0.9em;
+    margin-right: 3em;
+    width: 70%;
+}
+.card-par > h1{
+    width: 100%;
+    margin-bottom: 0.5em;
+    font-size: 1.3em;
+}
+.img-card > img{
+    height: 100%;
+    width: 50%;
+}
+.btn-card{
+    background-color: #fff;
+    margin: 3em calc(50% - 15em) -13em calc(50% - 15em);
+    border: 1px solid gray;
+    border-radius: 1em;
+    width: 30em;
+    height: 10em;
+    text-align: center;
     padding: 2em;
+    transition: 0.5s ease;
+}
+.btn-card > h1{
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+.btn-card > button:hover{
+    scale: 1.1;
+}
+.footer{
+    background-color: var(--very-dark-cyan);
+    width: 100%;
+    height: auto;
+    padding: 5em 5em 2em 5em;
+    color:hsl(193, 100%, 96%);
+}
+.footer > img{
+    filter: brightness(0) invert(1);
+}
+ul{
+    list-style: none;
+}
+.f-list{
+    width: 25%; 
+    padding: 0 2em 0 0em;
+}
+.f-lists{
+    margin: 2em 0 1em 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.f-list > ul > li {
+    margin-bottom: 1em;
+}
+.fab{
+    margin-right: 1em;
+}
+.footer > span{
+    font-size: 0.7em;
+    float: right;
 }
