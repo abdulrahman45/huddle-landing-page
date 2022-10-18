@@ -64,7 +64,6 @@ body{
     object-fit: contain;
 }
 .start-img{
-    border: 1px solid red;
     min-width: 20em ;
 }
 .welcome-p > h1{
@@ -80,10 +79,13 @@ body{
     margin-bottom: 2em;
 }
 @media(max-width: 40em){
-    .welcome{
+    .hero{
         height: auto;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .welcome{
+        flex-wrap: wrap;
     }
     .welcome-p{
         text-align: center;
@@ -96,7 +98,33 @@ body{
         height: 20em;
         margin: auto;
     }
-    
+    .footer{
+        justify-content: center;
+    }
+    .f-list{
+        min-width: 100%;
+        margin-bottom: 1em;
+    }
+    .f-lists{
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0;
+    }
+    .icons{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .cpright{
+        text-align: center;
+        font-size: 1em;
+        float: none;
+        margin: auto;
+    }
+    .cpright{
+        font-size: 1.2em;   
+        width: 100%;
+        float: none;
+    }
 }
 .cards{
     display: flex;
@@ -179,7 +207,7 @@ ul{
 .fab{
     margin-right: 1em;
 }
-.footer > span{
-    font-size: 0.7em;
+.cpright{
     float: right;
+    font-size: 0.9em;
 }
